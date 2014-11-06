@@ -1,4 +1,5 @@
-function TodoCtrl($scope) {
+var myApp = angular.module('myApp', []);
+myApp.controller('TodoCtrl', function TodoCtrl($scope) {
 
     $scope.todos = [
         {text:'Learn AngularJS', done:false},
@@ -19,4 +20,4 @@ function TodoCtrl($scope) {
             return !todo.done;
         })
     };
-}
+});
